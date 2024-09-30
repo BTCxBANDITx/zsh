@@ -1,0 +1,40 @@
+Feature-rich Syntax Highlighting for Zsh
+
+Installation
+
+Manual
+
+Clone the Repository.
+git clone https://github.com/z-shell/F-Sy-H ~/path/to/f-sy-h
+
+And add the following to your `zshrc` file.
+source ~/path/to/f-sy-h/F-Sy-H.plugin.zsh
+
+Zi
+Add the following to your `zshrc` file.
+zi light z-shell/F-Sy-H
+
+Zinit
+
+Add the following to your `zshrc` file.
+zinit light z-shell/F-Sy-H
+
+Antigen
+
+Add the following to your `zshrc` file.
+antigen bundle z-shell/F-Sy-H --branch=main
+
+Zgen
+
+Add the following to your .zshrc file in the same place you're doing your other zgen load calls in.
+zgen load z-shell/F-Sy-H . main
+
+Oh-My-Zsh
+
+Clone the Repository.
+git clone https://github.com/z-shell/F-Sy-H.git \
+  ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/F-Sy-H
+
+And add F-Sy-H to your plugin list.
+
+
