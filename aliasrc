@@ -1,0 +1,13 @@
+# General Aliases
+alias grep="grep --color=auto" 
+alias diff="diff --color=auto"
+alias ls="lsd"
+alias la="lsd -a"
+alias ll="lsd -la"
+alias cl="clear"
+alias rm="rm -ri"
+alias mv="mv -i"
+alias sz="source .zshrc"
+alias nv="nvim"
+alias vi="vim"
+alias sfl="sudo faillock --user b4nd1t --reset"
