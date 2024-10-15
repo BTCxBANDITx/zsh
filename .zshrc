@@ -1,6 +1,6 @@
+fastfetch
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.config/zsh//.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
 if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
@@ -8,8 +8,6 @@ fi
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
 source $ZDOTDIR/plugins/powerlevel10k/powerlevel10k.zsh-theme
-
-neofetch
 
 # Customize Prompt
 [[ ! -f ~/.config/zsh/.p10k.zsh ]] || source ~/.config/zsh/.p10k.zsh
@@ -77,3 +75,6 @@ export XDG_CACHE_HOME="$HOME/.cache"
 
 # neovim
 export PATH="/opt/nvim/bin:$PATH"
+
+# yazi colors
+source /home/b4nd1t/.local/share/lscolors.sh
