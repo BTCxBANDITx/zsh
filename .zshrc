@@ -74,9 +74,7 @@ export XDG_DATA_HOME="$HOME/.local/share"
 export XDG_CACHE_HOME="$HOME/.cache"
 
 EDITOR=vim
-VISUAL=emacs
 PAGER=vim
-TERM=kitty -e
 
 export LIBVIRT_DEFAULT_URI="qemu:///system"
 
