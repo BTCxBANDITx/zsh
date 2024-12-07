@@ -4,18 +4,18 @@
  alias tmux="tmux -u"
 
  # lsd directory listing commands
- alias ls="lsd --color=auto"
- alias la="lsd -a"
- alias lx="lsd -lXh" # sort by extension
- alias lk="lsd -lSrh" # sort by size
- alias lr="lsd -lRh" # recursive ls
- alias lt="lsd -ltrh" # sort by date
- alias lm="lsd -alh | more" # pipe through "more"
- alias ll="lsd -alFh" # long listing format
- alias lf="lsd -l | grep -E -v '^d'" # files only
- alias ldir="lsd -l | grep -E '^d' --color=never" # directories only
- alias l="lsd"
- alias ld="lsd -A | grep -E '^\.' --color=never"
+# alias ls="lsd --color=auto"
+# alias la="lsd -a"
+# alias lx="lsd -lXh" # sort by extension
+# alias lk="lsd -lSrh" # sort by size
+# alias lr="lsd -lRh" # recursive ls
+# alias lt="lsd -ltrh" # sort by date
+# alias lm="lsd -alh | more" # pipe through "more"
+# alias ll="lsd -alFh" # long listing format
+# alias lf="lsd -l | grep -E -v '^d'" # files only
+# alias ldir="lsd -l | grep -E '^d' --color=never" # directories only
+# alias l="lsd"
+# alias ld="lsd -A | grep -E '^\.' --color=never"
 
  # show the date
  alias da="date '+%Y-%m-%d %A %T %Z'"
