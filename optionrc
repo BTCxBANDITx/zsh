@@ -1,0 +1,51 @@
+## Changing Directories ##
+#
+#
+setopt AUTO_CD 						# Changes directories without having to use cd
+setopt AUTO_PUSHD					# Pushes the old direcrtory into the stack
+setopt PUSHD_IGNORE_DUPS			# Don't push multiple copies of the same directory into the stack
+
+## Completion ##
+#
+#
+setopt AUTO_LIST					          # Automatically list choices on ambiguous completion
+setopt AUTO_MENU					          # Use menu completion after the second consectutive tab key
+setopt AUTO_REMOVE_SLASH			      # If the next character typed ends a command, remove the slash
+setopt COMPLETE_ALIASES             # Prevents aliases from being sustituted before comp is attempted
+setopt COMPLETE_IN_WORD             # Cursors set at eot word on completion start, otherwise it stays and completion is done from both ends
+setopt GLOB_COMPLETE                # When the current word has a glob pattern, don't insert all the words
+setopt HASH_LIST_ALL                # list choices when the completion function is called twice
+setopt LIST_AMBIGUOUS               # If unambiguous prefix is needed, its done w/o completion
+
+## Expansion and Globbing ##
+#
+#
+setopt EXTENDED_GLOB                 # Extended globbing. Allows using regular expressions with *
+setopt GLOB_DOTS                     # Do not require a leading ‘.’ in a filename to be matched explicitly
+setopt NO_CASE_GLOB                  # Case insensitive globbing
+setopt NUMERIC_GLOB_SORT             # Sort filenames numerically when it makes sense
+
+## History ##
+#
+#
+setopt APPEND_HISTORY                # Immediately append history instead of overwriting
+setopt HIST_EXPIRE_DUPS_FIRST        # IF internal needs trimmed, oldest dups erased first
+setopt HIST_IGNORE_ALL_DUPS          # If a new command is a duplicate, remove the older one
+setopt HIST_IGNORE_SPACE             # Don't save commands that start with space
+
+## Initialization ##
+#
+#
+setopt RCS                           # After zshenv is sourced on startup, source zsh files in order
+
+## Input/Output ##
+#
+#
+setopt CORRECT                        # Auto correct mistakes
+setopt INTERACTIVE_COMMENTS           # Allow comments even in interactive shells
+setopt HASH_CMDS                      # Note the location of each command the first time it is executed
+
+## Job Control ##
+#
+#
+setopt NO_CHECK_JOBS                  # Don't warn about running processes when exiting
